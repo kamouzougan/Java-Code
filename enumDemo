@@ -1,0 +1,30 @@
+import java.util.Scanner; 
+
+public class enumDemo {
+	 enum Day {SUNDAY,MONDAY,TUESDAY,WEDNESDAY,THURDAY,FRIDAY,SATURDAY}
+	 enum Month {JAN,FEB,MAR,APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC }
+	public static void main(String[]args) { 
+	
+		
+		Day tigf ;
+		Month libra ;
+		
+		tigf = Day.FRIDAY ;
+		libra =Month.OCT ;
+		
+		System.out.println("My sign is libra ,since I was born in");
+		System.out.println(libra);
+		System.out.print("That's the ");
+		System.out.println(libra.ordinal());
+		System.out.println("-th month of the year.");
+		System.out.println("   (Counting from 0, of course!)");
+        
+        System.out.print("Isn't it nice to get to ");
+        System.out.println(tigf);   // Output value will be:  FRIDAY
+         
+        System.out.println( tigf + " is the " + tigf.ordinal() 
+                                           + "-th day of the week.");
+	}
+		
+		
+	}
